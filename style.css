@@ -1,0 +1,123 @@
+
+body {
+  background-color: #061c33;
+}
+
+.title {
+  font-family: Test Domaine Sans Display;
+  /* font-weight: bold; */
+  text-align: center;
+  color: #FFF;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  letter-spacing: 1px;
+}
+
+#enter-button {
+  background-image: url(https://media.giphy.com/media/oEK6WBsejSme4/giphy.gif);
+  background-size: cover;
+  color: transparent;
+  -webkit-background-clip: text;
+  text-transform: uppercase;
+  font-size: 120px;
+  line-height: 1;
+  margin: 10px 0;
+}
+
+#enter-button:hover {
+    background-image: url(https://media.giphy.com/media/Y4vip84hg9BhdNidTR/giphy.gif);
+  background-size: cover;
+  color: transparent;
+  -webkit-background-clip: text;  
+  /* filter: invert(75%); */
+}
+
+
+
+@keyframes flickerAnimation {
+    0%   { opacity:1; }
+    50%  { opacity:0; }
+    100% { opacity:1; }
+  }
+  @-o-keyframes flickerAnimation{
+    0%   { opacity:1; }
+    50%  { opacity:0; }
+    100% { opacity:1; }
+  }
+  @-moz-keyframes flickerAnimation{
+    0%   { opacity:1; }
+    50%  { opacity:0; }
+    100% { opacity:1; }
+  }
+  @-webkit-keyframes flickerAnimation{
+    0%   { opacity:1; }
+    50%  { opacity:0; }
+    100% { opacity:1; }
+  }
+  #flicker {
+    -webkit-animation: flickerAnimation 1s infinite;
+    -moz-animation: flickerAnimation 1s infinite;
+    -o-animation: flickerAnimation 1s infinite;
+     animation: flickerAnimation 1s infinite;
+  }
+.gametext {
+    color: #FFF;
+   font-family: Silkscreen Expanded;
+    text-align:center;
+    font-size: 55px;
+    position:relative;
+    padding-top: 50px;
+}
+
+
+.flickerdiv{
+    display:inline; 
+}
+
+#startbutton {
+  text-decoration: none;
+  color: #FFF;
+  padding-top: 20px;
+}
+
+#startbutton:hover {
+  color: #84E296;
+}
+
+.door-page {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding-top: 150px;
+}
+
+#doors {
+  width: 284px;
+  height: 266px;
+  background: url("door.png") no-repeat;
+  display: inline-block;
+}
+
+#doors:hover {
+  /* display: inline-block; */
+  background: url("door-open.png") no-repeat;
+
+}
+
+#end-button {
+  font-family: Test Domaine Sans Display;
+  text-align: center;
+  color: #FFF;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100px;
+  font-size: 75px;
+  letter-spacing: 1px;
+  background: none;
+  border: none;
+}
