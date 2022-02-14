@@ -1,0 +1,14 @@
+body {
+    font-family: GT Alpina Tw Trial;
+    background-color:rgb(161, 170, 180);
+}
+
+
+h1,h2 {color: rgb(20, 75, 44);}
+div {
+    padding: 15px;
+}
+
+img {
+    width: 300px;
+}
