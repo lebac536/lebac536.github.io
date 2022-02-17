@@ -1,0 +1,103 @@
+
+body {
+    background-color: rgb(83, 132, 187);
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: row;
+    /* background-color: DodgerBlue; */
+    height: 300px;
+    align-items: center;
+  }
+  
+  .flex-container > div {
+    /* background-color: #f1f1f1; */
+    margin: 10px;
+    min-width:60px ;
+    font-size: 30px;
+  }
+
+  #title {
+      font-family: Isobare;
+      width: 100vw;
+      font-size: 240px;
+      letter-spacing: 2px;
+      text-align: center;
+      line-height: 270px;
+
+  }
+
+
+  #description {
+    font-family: sans-serif;
+    width: 43vw;
+    text-align: right;
+    font-family: Gotham Light;
+    font-size: 5vh;
+    padding-left: 2vw;
+}
+
+#scroll-container{ 
+    padding: 10px;
+    border-radius: 5px;
+    overflow:scroll;
+    height: 100px;
+}
+
+
+#scroll-text {
+/* animation properties */
+-moz-transform: translateX(100%);
+-webkit-transform: translateX(100%);
+transform: translateX(100%);
+
+-moz-animation: my-animation 15s linear infinite;
+-webkit-animation: my-animation 15s linear infinite;
+animation: my-animation 15s linear infinite;
+animation-iteration-count: infinite;
+font-family: Isobare;
+letter-spacing: 30px;
+font-size: 50px;
+}
+
+
+.description-letterbox {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: 300px;
+    align-items: center;
+  }
+  
+#letterboxd {
+    font-family: Isobare;
+    padding-left: 5vw;
+    font-size: 10vh;
+    line-height: 9vh;
+    width: 7vh;
+    flex-direction: row;
+    margin: 10px;
+    letter-spacing: 2px;
+
+    
+}
+
+/* for Chrome */
+@-webkit-keyframes my-animation {
+from { -webkit-transform: translateX(100%); }
+to { -webkit-transform: translateX(-100%); }
+}
+
+@keyframes my-animation {
+from {
+  -moz-transform: translateX(100%);
+  -webkit-transform: translateX(100%);
+  transform: translateX(100%);
+}
+
+to {
+  -moz-transform: translateX(-100%);
+  -webkit-transform: translateX(-100%);
+  transform: translateX(-100%);
+}
