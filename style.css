@@ -1,0 +1,95 @@
+body {
+    background-color: rgb(20, 20, 20);
+    color: white;
+    font-size: 2vw;
+    text-decoration: none;
+    font-family: Junction;
+}
+
+#container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+#subcontainer {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 80vw;
+    height: 50vh;
+    text-align: center;
+   
+}
+
+#logo {
+    width: 50vw;
+}
+
+#QRcode {
+    width: 11vw;
+    padding-top: 1vh;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    background-color:rgb(226, 226, 226);
+    padding: 1vw;
+    width: 14vw;
+}
+
+
+
+/* Dropdown Button */
+.dropbtn {
+    background-color: rgb(226, 226, 226);
+    color: black;
+    padding: 1vw;
+    font-size: 2vw;
+    width: 14vw;
+    border: none;
+    font-family: 'Junction';
+  }
+  
+  /* The container <div> - needed to position the dropdown content */
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  /* Dropdown Content (Hidden by Default) */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: rgb(226, 226, 226);
+    width: 190px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  /* Links inside the dropdown */
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  /* Change color of dropdown links on hover */
+  .dropdown-content a:hover {color:white;}
+  
+  /* Show the dropdown menu on hover */
+  .dropdown:hover .dropdown-content {display: block;}
+  
+  /* Change the background color of the dropdown button when the dropdown content is shown */
+  .dropdown:hover .dropbtn {background-color:#E73452;
+    color: white;}
+
+  a:hover {
+      background-color:#E73452;
+      color: white;
+  }
