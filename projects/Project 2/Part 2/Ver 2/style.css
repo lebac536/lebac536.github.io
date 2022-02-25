@@ -1,10 +1,10 @@
-@media only screen and (max-width: 738px) {
+/* @media only screen and (max-width: 738px) {
     body {
       display: flex;
       flex-direction: column;
     }
 
-}
+} */
 
 body {
     display: flex;
@@ -16,4 +16,14 @@ body {
     padding-right: 2vw;
     text-align: justify;
     font-size: 4vh;
+}
+
+@media screen and (max-width: 768px) {
+  body {
+    flex-direction: column;
+  }
+  .top-left {
+    height: initial; 
+    /* change to left-to-right writing */
+  }
 }

@@ -1,0 +1,99 @@
+@font-face {
+    font-family: Avenir;
+    src: url(/Amarante-Regular.ttf);
+  }
+
+body {
+    background-color: rgb(17, 16, 16);
+    font-family: Avenir;
+    color: rgb(62, 163, 96);
+    height: 100vh;
+    font-weight: bold;
+}
+
+
+div {
+
+  
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* height: 50%; */
+    
+
+}
+
+#scouts img {
+    width: 30vw;
+}
+
+p {
+    display: none;
+}
+
+
+#logo {
+  padding-top: 10vh;
+  height: 50%;
+}
+
+#small {
+  display: flex;
+  padding-top: 40vh
+
+}
+
+#medium {
+  display: none;
+}
+
+#big {
+  display: none;
+}
+
+/* When the browser is at least 600px and above */
+@media screen and (min-width: 768px) {
+  #scouts {
+    flex-direction: column;
+  }
+    #scouts p {
+      display: flex;
+      font-size: 60px;
+      
+    }
+
+    #small {
+      display: none;
+    }
+
+    #medium {
+      display: initial;
+      width: 30vw;
+    }
+  }
+
+
+/* When the browser is at least 800px and above */
+@media screen and (min-width: 1000px) {
+    #scouts {
+      flex-direction: row;
+    }
+    #scouts p {
+      font-size: 70px;
+      padding-top: 8vh;
+      padding-left: 1vw;
+      
+    }
+    #small {
+      display: none;
+    }
+
+    #medium {
+      display: none;
+    }
+
+    #big {
+      display: initial;
+      padding-top: 40vh;
+    }
+  }

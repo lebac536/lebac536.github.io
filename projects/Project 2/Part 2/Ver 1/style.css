@@ -1,17 +1,13 @@
-@media (max-width: 700px) {
+@media (min-width: 768px) {
     body {
-      display: flex;
+      display: initial;
       flex-direction: column;
     }
 
     .bottom-right {
-        max-width: 700px;
-        min-height: 80vh;
     }
     .top-left {
-        max-width: 700px;
-        min-height: 20vh;
-        writing-mode: horizontal-tb;
+        writing-mode: horizontal-tb
     }
   }
 
