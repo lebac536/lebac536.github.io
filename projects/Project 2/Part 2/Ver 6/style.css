@@ -1,20 +1,11 @@
-@media screen and (min-width: 800px) {
-    body {
-      display: flex;
-      flex-direction: column;
-      orientation: landscape;
-    }
-  }
-
-
-
 body {
     font-family: Futura;
     font-size: 4vw;
+    overflow: hidden;
 }
 
 #container {
-    display:flex;
+    display: flex;
     justify-content: space-between;
     padding-top: 0%;
     
@@ -32,5 +23,5 @@ body {
     overflow: scroll;
     background-color: black;
     color: white;
-    padding-left: 2vw;
+    padding-left: 1vw;
 }

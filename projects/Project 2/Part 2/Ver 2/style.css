@@ -11,4 +11,9 @@ body {
     flex-direction: row;
     /* justify-content: center; */
     font-family: Futura;
+    background-image: linear-gradient(to bottom right, rgb(0, 0, 0), rgb(248, 248, 248));
+    padding-left: 2vw;
+    padding-right: 2vw;
+    text-align: justify;
+    font-size: 4vh;
 }

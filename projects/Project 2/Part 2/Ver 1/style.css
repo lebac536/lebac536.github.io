@@ -5,11 +5,11 @@
     }
 
     .bottom-right {
-        min-width: 100vw;
+        max-width: 700px;
         min-height: 80vh;
     }
     .top-left {
-        min-width: 100vw;
+        max-width: 700px;
         min-height: 20vh;
         writing-mode: horizontal-tb;
     }
