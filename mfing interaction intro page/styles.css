@@ -8,15 +8,23 @@
 
 body{
     background-color: black;
-    color: white;
     font-family: 'Junction';
     
 }
 
+#title {
+    position: sticky;
+    top: 0;
+    padding: 1vh;
+    z-index: -1;
+}
+
 h1
 { 
+    color: #E73452;
     text-align: center;
-    font-size: 7vw;
+    font-size: 10vw;
+    
 }
 
 h2 
@@ -26,7 +34,7 @@ h2
     align-items: flex-start;
     font-size: 2vw;
     text-align: center;
-    color: black;
+    color: #E73452;
 }
 
 .container {
