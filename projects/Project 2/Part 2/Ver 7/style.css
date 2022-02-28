@@ -1,40 +1,32 @@
 @media screen and (min-width: 768px) {
-    body {
-      display: flex;
-      flex-direction: column;
-      orientation: landscape;
+    /* ?i dont know why it doesn't work */
     }
-  }
-
-
-
-body {
-    font-family: Futura;
-    font-size: 4vw;
-}
-
-#container {
-    display:flex;
-    justify-content: space-between;
-    padding-top: 0%;
-    
-}
-
-#left {
-    width: 48vw;
-    height: 100vh;
-    overflow: scroll;
-}
-
-#right {
-    width: 48vw;
-    height: 100vh;
-    overflow: scroll;
-    background-color: black;
-    color: white;
-    padding-left: 2vw;
-}
-
-#text1 {
-    position: relative;
-}
+  
+    body{
+        font-family: Futura;
+        font-size: 3vw;
+        display: flex;
+    }
+  
+    #container {
+        display: flex;
+        text-align: center;
+        
+    }
+  
+  
+    #container div {
+      height: 48vh;
+      width: 100vw;
+      display: grid;
+      grid-template-rows: auto auto;
+      align-items: center;
+      
+      
+      
+    }
+  
+    #black {
+        background-color: black;
+        color: white;
+    }
