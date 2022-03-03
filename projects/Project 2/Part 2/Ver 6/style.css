@@ -1,5 +1,9 @@
 @media screen and (min-width: 768px) {
-  /* ?i dont know why it doesn't work */
+  #container div {
+    grid-template-columns: auto auto;
+    grid-template-rows: auto;
+    overflow: hidden;
+  }
   }
 
   body{
@@ -9,6 +13,7 @@
   }
 
   #container {
+    /* display: block; */
       display: flex;
       text-align: center;
       
@@ -16,11 +21,14 @@
 
 
   #container div {
+    position: relative;
     height: 48vh;
     width: 100vw;
     display: grid;
     grid-template-rows: auto auto;
+    grid-template-columns: auto;
     align-items: center;
+    overflow: hidden;
     
     
     
