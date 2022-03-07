@@ -64,8 +64,6 @@
         align-items: center;
         overflow: hidden;
         overflow-wrap: break-word;
-        padding: 1vw;
-        padding-right: 1vw;
     }
 
     #bottom {
@@ -74,7 +72,5 @@
         align-items: center;
         overflow: hidden;
         overflow-wrap: break-word;
-        padding: 1vw;
-        padding-right: 1vw;
        
     }
