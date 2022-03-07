@@ -1,0 +1,45 @@
+@media screen and (max-width: 768px) {
+   body {
+    text-orientation:sideways;
+    writing-mode: vertical-rl;
+   }
+    }
+  
+    body{
+        font-family: Futura;
+        font-size: 3vw;
+        display: flex;
+      
+    }
+  
+    #container {
+      /* display: block; */
+        display: flex;
+        text-align: center;
+        grid-template-rows: auto auto;
+        grid-template-columns: auto;
+        overflow: hidden;
+        height: 100vh;
+        
+    }
+  
+    #top {
+        position: relative;
+        height: 50vh;
+        width: 100vw;
+        display: grid;
+        align-items: center;
+        overflow: hidden;
+        padding: 1vw;
+        padding-right: 1vw;
+    }
+
+    #bottom {
+        position: relative;
+        height: 50vh;
+        width: 100vw;
+        display: grid;
+        align-items: center;
+        overflow: hidden;
+       
+    }
