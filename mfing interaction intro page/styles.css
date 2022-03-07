@@ -6,6 +6,12 @@
 
 }
 
+@media screen and (max-width: 768px) {
+    body {
+     overflow-x: scroll;
+    }
+     }
+
 body{
     background-color: black;
     font-family: 'Junction';
