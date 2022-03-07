@@ -2,8 +2,46 @@
    body {
     text-orientation:sideways;
     writing-mode: vertical-rl;
+    overflow: hidden;
    }
+
+   #container{
+       grid-template-columns: auto auto;
+       grid-template-rows: auto;
+
+   }
+   #top{
+       height:100vh;
+       width:50vw;
+       overflow-wrap: break-word;
+   }
+   #bottom{
+    height:100vh;
+    width:50vw;
+    overflow-wrap: break-word;
+
+}
     }
+
+    @media screen and (min-width: 769px) {
+
+     
+        #container{
+            grid-template-rows: auto auto;
+            grid-template-columns: auto;
+     
+        }
+        #top{
+            height: 50vh;
+            width: 100vw;
+
+        }
+        #bottom{
+            height: 50vh;
+            width: 100vw;
+     
+     }
+         }   
   
     body{
         font-family: Futura;
@@ -16,8 +54,6 @@
       /* display: block; */
         display: flex;
         text-align: center;
-        grid-template-rows: auto auto;
-        grid-template-columns: auto;
         overflow: hidden;
         height: 100vh;
         
@@ -25,21 +61,21 @@
   
     #top {
         position: relative;
-        height: 50vh;
-        width: 100vw;
         display: grid;
         align-items: center;
         overflow: hidden;
+        overflow-wrap: break-word;
         padding: 1vw;
         padding-right: 1vw;
     }
 
     #bottom {
         position: relative;
-        height: 50vh;
-        width: 100vw;
         display: grid;
         align-items: center;
         overflow: hidden;
+        overflow-wrap: break-word;
+        padding: 1vw;
+        padding-right: 1vw;
        
     }
