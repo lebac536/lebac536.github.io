@@ -29,6 +29,14 @@
             font-size: 3vw;
         }
 
+        #credits{
+            bottom: 47%;
+            width: 100vw;
+            height: 6vh;
+            font-size: 2vw;
+
+        }
+
      
         #container{
             grid-template-rows: auto auto;
@@ -75,4 +83,13 @@
         padding-left: 2vw;
         padding-right: 2vw;
        
+    }
+
+    #credits {
+        position: absolute;
+        z-index: 10;
+        background-color:#737373 ;
+        color: white;
+        font-style: italic;
+        text-align: center;   
     }
