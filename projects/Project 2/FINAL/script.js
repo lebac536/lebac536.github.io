@@ -70,7 +70,7 @@ $(document).ready(function(){
     $("#text33-reverse").hide();
     $("#text34-reverse").hide();
     $("#text35-reverse").hide();
-    $("#text1-reverse").click(function(){
+    $("#text1").click(function(){
         $("#text1").hide();
         $("#text2").show();
     });
