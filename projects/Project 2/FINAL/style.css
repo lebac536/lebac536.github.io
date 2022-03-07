@@ -2,7 +2,6 @@
    body {
     text-orientation:sideways;
     writing-mode: vertical-rl;
-    overflow: hidden;
    }
 
    #container{
