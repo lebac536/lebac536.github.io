@@ -32,12 +32,12 @@
         }
         #top{
             height: 50vh;
-            width: 100vw;
+            width: 96vw;
 
         }
         #bottom{
             height: 50vh;
-            width: 100vw;
+            width: 96vw;
      
      }
          }   
@@ -50,10 +50,8 @@
     }
   
     #container {
-      /* display: block; */
         display: flex;
         text-align: center;
-        overflow: hidden;
         height: 100vh;
         
     }
@@ -62,15 +60,15 @@
         position: relative;
         display: grid;
         align-items: center;
-        overflow: hidden;
-        overflow-wrap: break-word;
+        padding-left: 2vw;
+        padding-right: 2vw;
     }
 
     #bottom {
         position: relative;
         display: grid;
         align-items: center;
-        overflow: hidden;
-        overflow-wrap: break-word;
+        padding-left: 2vw;
+        padding-right: 2vw;
        
     }
