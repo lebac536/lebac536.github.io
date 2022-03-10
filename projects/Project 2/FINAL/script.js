@@ -1,4 +1,5 @@
 $(document).ready(function(){
+    $("#credits").hide();
     $("#text2").hide();
     $("#text3").hide();
     $("#text4").hide();
@@ -205,6 +206,8 @@ $(document).ready(function(){
       $("#text34").click(function(){
         $("#text34").hide();
         $("#text35").show();
+        $("#credits").show();
+
       });
       $("#text35").click(function(){
         $("#text35").hide();
