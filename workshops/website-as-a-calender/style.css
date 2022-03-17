@@ -1,0 +1,16 @@
+@font-face {
+    font-family: Graphik;
+    src: url(GraphikSuper.otf);
+    font-weight: super;
+  }
+
+
+body {
+    background-color: black;
+}
+
+#title {
+    font-family: Graphik;
+    font-weight: super;
+;
+}
