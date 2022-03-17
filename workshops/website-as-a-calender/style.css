@@ -4,6 +4,12 @@
     font-weight: Black;
   }
 
+@font-face {
+    font-family:Alpina;
+    src: url(GT-Alpina-Typewriter-Regular-Trial.woff2);
+    font-weight: regular;
+}
+
 
 body {
     background-color: black;
@@ -12,5 +18,26 @@ body {
 #title {
     font-family: Barlow;
     font-weight: Black;
-;
+    color: white;
+    font-size: 19vw;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding-left: 1vw;
+    line-height: 16vw;
+    margin-top: 0px;
+    display: block;
+    background-color: black;
+
+}
+
+#title:hover {
+    color: rgb(95, 206, 85);
+}
+
+#clock {
+    color: rgb(255, 255, 255);
+    font-family:Alpina;
+    font-weight: regular;
+    font-size: 8vw;
 }
