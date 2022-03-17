@@ -1,7 +1,7 @@
 @font-face {
-    font-family: Graphik;
-    src: url(GraphikSuper.otf);
-    font-weight: super;
+    font-family: Barlow;
+    src: url(Barlow-Black.woff);
+    font-weight: Black;
   }
 
 
@@ -10,7 +10,7 @@ body {
 }
 
 #title {
-    font-family: Graphik;
-    font-weight: super;
+    font-family: Barlow;
+    font-weight: Black;
 ;
 }
