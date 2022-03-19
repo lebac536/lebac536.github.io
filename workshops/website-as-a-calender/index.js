@@ -14,7 +14,7 @@ div1.addEventListener('click',function(){
 });
 
 
-const birthdayDate = new Date("June 21 2022").getTime();
+const birthdayDate = new Date("Jun 21, 2022").getTime();
 
 
 const x = setInterval(function(){
@@ -31,7 +31,7 @@ const x = setInterval(function(){
 
     if (distance < 0 ) {
         clearInterval(x);
-        document.getElementById("clock").innerHTML = "happy birthday bitch. you are 20";
+        document.getElementById("clock").innerHTML = "happy birthday bitch. you turned 20";
     }
 }, 1000);
 
