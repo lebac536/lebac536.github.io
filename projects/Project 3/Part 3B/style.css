@@ -1,0 +1,30 @@
+body {
+    background-color: rgb(9, 10, 9);
+    color: blanchedalmond;
+    margin: 20px;
+}
+
+#text {
+    margin-bottom: 30px;
+
+}
+
+#body {
+    width: 60vw;
+    margin-top: 20px;
+}
+
+#text div {
+    border: 10px;
+}
+
+#title {
+    font-size: 10vh;
+    font-family: sans-serif;
+    font-weight: bolder;
+}
+
+
+img {
+    width: 25vw;
+}
