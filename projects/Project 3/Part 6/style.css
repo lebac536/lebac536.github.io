@@ -1,0 +1,66 @@
+@font-face {
+    font-family: "Orchard Linear";
+    src: url("Orchard-Linear.otf") format("otf"),
+  }
+
+  @font-face {
+      font-family:"GT Alpina" ;
+      src: url("../../../../../../../../graphic-design/FONTS/Grilli-Type-Trial-Fonts-2021-05-v2/Web/GT-Alpina-Fine-Standard-Medium-Italic.woff2") format("otf")
+  }
+
+body {
+    background-image: url(background.png);
+}
+
+#top {
+    height: 30%;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+#title {
+    font-family: Orchard Linear;
+    font-size: 20vw;
+    color: white;
+    -webkit-text-stroke: black;
+    -webkit-text-stroke-width: 3px;
+    align-items: flex-start;
+}
+
+#bottom {
+    height: 70%;
+    width: 100%;
+}
+
+#filter {
+    display: flex;
+    background-color: white;
+    width: 30%;
+    filter: opacity(30%);
+    font-family: GT Alpina;
+    color: black;
+    font-size: 5vh;
+    justify-content: center;
+    flex-direction: column;
+    padding-left: 15px;
+}
+
+
+#subcategory {
+   display: none;
+}
+
+#photogallery {
+    display: flex;
+    justify-content: space-between;
+}
+
+#photogallery img {
+    height: 150px;
+}
+
+
+#category:hover {
+background-color: red;
+}
