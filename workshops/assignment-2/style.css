@@ -1,3 +1,7 @@
+@font-face {
+  font-family: Isobare;
+  src: url(Isobare-Regular.otf);
+}
 
 body {
     background-color: rgb(83, 132, 187);
