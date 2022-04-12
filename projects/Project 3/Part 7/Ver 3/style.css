@@ -43,7 +43,7 @@ body {
 #filters {
   display: inline-flex;
   width: 100%;
-  background-color: blueviolet;
+  /* background-color: blueviolet; */
   height: 100%;
   align-items: center;
   color: black;
@@ -53,7 +53,7 @@ body {
   font-size:3vw ;
   align-items: center;
   width: 48%;
-  background-color: blue;
+  /* background-color: blue; */
 
 }
 
@@ -75,7 +75,7 @@ body {
   padding: 1vh;
   align-items: center;
   width: 100%;
-  background-color: beige;
+  /* background-color: beige; */
   /* display: none ; */
 }
 
