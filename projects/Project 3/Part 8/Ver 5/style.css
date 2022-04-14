@@ -1,0 +1,117 @@
+@font-face {
+  font-family: Orchard Linear;
+  src: url('projects/Project 3/Part 6/Orchard-Linear.otf');
+}
+
+
+body {
+  background-image: url(background.png);  
+  width: 100vw;
+  background-repeat: repeat-y;
+  margin: 0;
+}
+
+#directory {
+  display: flex;
+  height: 40vh;
+  display: flex;
+  width: 100vw;
+
+}
+
+#title {
+  font-family: Orchard Linear;
+  font-size: 13vw;
+  color: white;
+  padding-left: 5vw;
+  width: 33vw;
+}
+
+#filtering-container {
+  display: inline-flex;
+  flex-direction: row;
+  width: 67vw;
+  background-color: rgba(255, 255, 255, 0.609);
+  border-radius: 25px;
+  color: white;
+  margin: 1vw;
+  padding: 2vw;
+  font-family: sans-serif;
+  justify-content:baseline
+}
+
+
+#filters {
+  position: relative;
+    display: inline-block;
+  width: 100%;
+  height: 30%;
+  color: black;
+}
+
+.filter-name {
+  font-size:3vw ;
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  background-color: transparent;
+  background-repeat: no-repeat;
+  border: none;
+  cursor: pointer;
+  outline: none;
+
+}
+
+.filter-name:hover {
+  color: rgb(241, 0, 0);
+  background-color: rgba(255, 255, 255, 0.558);
+  border-radius: 25px;
+}
+
+.filter-name:hover #subfilters-container{
+display: block;
+}
+
+
+
+.subfilters-container {
+  /* display: block; */
+  flex-direction: column;
+  width: 100%;
+  display: none;
+  position: absolute;
+  z-index: 1;
+}
+
+.subfilters{
+  padding: 1vh;
+  display: block;
+  text-align: center;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  font-size: 3vw;
+}
+
+.subfilters:hover {
+  color: rgb(219, 18, 18);
+}
+
+#grid {
+    height: 60vh;
+    display: flex;
+    width: 100vw;
+    overflow-x: scroll;
+    align-items: center;
+
+   
+}
+
+.image {
+    height: 30vh;
+    padding-left: 3vw;
+    padding-right: 3vw;
+}

@@ -1,0 +1,97 @@
+@font-face {
+  font-family: Orchard Linear;
+  src: url('projects/Project 3/Part 6/Orchard-Linear.otf');
+}
+
+
+body {
+  background-image: url(background.png);  
+  width: 100vw;
+  background-repeat: repeat-y;
+  margin: 0;
+}
+
+#directory {
+  display: flex;
+  height: 40vh;
+  display: flex;
+  width: 100vw;
+
+}
+
+#title {
+  font-family: Orchard Linear;
+  font-size: 13vw;
+  color: white;
+  padding-left: 5vw;
+  width: 33vw;
+}
+
+#filtering-container {
+  display: inline-flex;
+  flex-direction: column;
+  width: 67vw;
+  background-color: rgba(255, 255, 255, 0.838);
+  border-radius: 25px;
+  color: white;
+  margin: 1vw;
+  padding: 2vw;
+  font-family: sans-serif;
+  justify-content: space-around;
+}
+
+
+#filters {
+  display: inline-flex;
+  width: 100%;
+  /* background-color: blueviolet; */
+  height: 100%;
+  align-items: center;
+  color: black;
+}
+
+#filter-name {
+  font-size:3vw ;
+  align-items: center;
+  width: 70%;
+  /* background-color: blue; */
+
+}
+
+#filter-name:hover {
+  color: rgb(219, 18, 18);
+}
+
+
+
+#subfilters-container {
+  display: inline-flex;
+  flex-direction: column;
+  width: 100%
+}
+
+#subfilters{
+  font-size: 2vw;
+  display: inline-flex;
+  padding: 1vh;
+  align-items: center;
+  width: 100%;
+  /* background-color: beige; */
+  /* display: none ; */
+}
+
+#grid {
+    height: 60vh;
+    display: flex;
+    width: 100vw;
+    overflow-x: scroll;
+    align-items: center;
+
+   
+}
+
+.image {
+    height: 30vh;
+    padding-left: 3vw;
+    padding-right: 3vw;
+}
