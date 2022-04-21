@@ -29,113 +29,118 @@ jsonPromise.then ((data) => {
         // Filtering sorta lol or at least logging it to the console but not really filtering yet
 
 
+   
+
 
         // //Create Container
 
         const containerElement = document.createElement('div')
         containerElement.classList.add('container')
 
-        // const imageElement = document.createElement('img')
-        // imageElement.classList.add('image')
-
-
-    
-
-
-
-        
-        // imageElement.setAttribute('src',imageUrl)
+        const imageElement = document.createElement('img')
+        imageElement.classList.add('image')
+        imageElement.setAttribute('src',imageUrl)
 
         //Add Container Element to DOM
 
         gridContainer.appendChild(containerElement)
 
         //Add Image to Container in DOM
+
+        containerElement.appendChild(imageElement)
+
+        const allImages = document.querySelectorAll('img')
+
         
-        // containerElement.appendChild(imageElement)
 
         //COLOUR
-        // red
-        const redImage = records[index].fields.Red == true
 
+        // RED 
+        
+        const redImage = records[index].fields.Red
         if (redImage == true) {
-            // console.log(imageUrl)
+            console.log(imageUrl)
             console.log('this is red')    
             const redImageElement = document.createElement('img')
             redImageElement.classList.add('image')
             redImageElement.setAttribute('id','redImage')
             redImageElement.setAttribute('src',imageUrl)
-            containerElement.appendChild(redImageElement)
+            // containerElement.appendChild(redImageElement)
             
             
         } 
    
 
-        //white
-        // const whiteImage = records[index].fields.White
-        // if (whiteImage == true) {
-        //     console.log('this is white')  
-           
-        // } 
+        //WHITE
 
-        // //blue
+        const whiteImage = records[index].fields.White
+        if (whiteImage == true) {
+            console.log('this is white') 
+            const whiteImageElement = document.createElement('img')
+            whiteImageElement.classList.add('image')
+            whiteImageElement.setAttribute('id','whiteImage')
+             
+        } 
+
+        // BLUE
+
         // const blueImage = records[index].fields.Blue
         // if (blueImage == true) {
-        //     console.log('this is blue')  
+        //     console.log('this is blue')
+        //     const blueImageElement = document.createElement('img')
+        //     blueImageElement.classList.add('image')
+        //     blueImageElement.setAttribute('id','blueImage')
+               
             
         // }
+
+        const blueImage = 
+        allImages.filter(allImages.index)
 
 
 
 
         //LENGTH
-        // const longWordCount = records[index].fields.fourormorewords
+        const longWordCount = records[index].fields.fourormorewords
 
-        // const oneWord = records[index].fields.oneword
-
-        // const twoOrThreeWords = records[index].fields.twoorthreewords
-
-        // if (longWordCount == true) {
-        //     console.log('this phrase is 4 or more words')
-        // } 
-        // if (oneWord == true){
-        //     console.log('this is 1 word') 
-        // }
-        // if (twoOrThreeWords == true){
-        //     console.log('this phrase is 2-3 words long')
-        // }
+        const oneWord = records[index].fields.oneword
 
 
+        const twoOrThreeWords = records[index].fields.twoorthreewords
+
+        if (longWordCount == true) {
+            console.log('this phrase is 4 or more words')
+            const manyWordElement = document.createElement('img')
+            manyWordElement.classList.add('image')
+            manyWordElement.setAttribute('id','manyWordImage')
+            
+        } 
 
 
+        if (oneWord == true){
+            console.log('this is 1 word') 
+            const oneWordElement = document.createElement('img')
+            oneWordElement.classList.add('image')
+            oneWordElement.setAttribute('id','oneWordImage')
+           
+        }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
+        if (twoOrThreeWords == true){
+            console.log('this phrase is 2-3 words long')
+            const twoOrThreeWordElement = document.createElement('img')
+            twoOrThreeWordElement.classList.add('image')
+            twoOrThreeWordElement.setAttribute('id','twoOrThreeWordImage')
+           
+        }
 
 
 
-
-
-
-
-        
 
             
         //make buttons work
 
-        //filters
+        //FILTERS
 
         document.getElementById("color").addEventListener("click", showColorSubFilters);
 
@@ -159,18 +164,79 @@ jsonPromise.then ((data) => {
         }
         }
 
-        //subfilters
+      //SUBFILTERS
 
-        document.getElementById("red-button").addEventListener("click", showRedImages);
+      // word count
 
-        function showRedImages() {
-          const x = document.getElementById("redImage");
-          if (x.style.display === "none") {
-            x.style.display = "block";
-          } else {
-            x.style.display = "none";
-      }
-      }
+      const oneWordImages = document.querySelectorAll('#oneWordImage') 
+      const twoOrThreeWordImages = document.querySelectorAll('#twoOrThreeWordImage')
+      const longerWordImages = document.querySelectorAll ('#manyWordImage')
+
+      // color
+
+      const redImages = document.querySelectorAll ('#redImage')
+      const blueImages = document.querySelectorAll ('#blueImage')
+      const whiteImages = document.querySelectorAll ('#whiteImage')
+
+
+        document.getElementById("oneWord-button").addEventListener("click", showOneWordImages);
+
+        function showOneWordImages() {
+          
+          
+          for (let index = 0; index < allImages.length; index++) {
+
+
+            allImages.filter(x => x.id === 'oneWordImage')
+        //     if (allImages.has) {
+        //       oneWordImages.style.display = "block";
+        //     } else {
+        //       oneWordImages.style.display = "none";
+        // }
+
+
+        
+            
+            // oneWordImages.style.display = 'block';
+            // twoOrThreeWordImages.style.display = 'none';
+            // longerWordImages.style.display = 'none'
+          }
+        }
+
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        // document.getElementById("twoOrThree-button").addEventListener("click", showTwoOrThreeWordImages);
+
+        // function showTwoOrThreeWordImages() {
+        //     const allImages = document.querySelectorAll('img')
+        //     const twoOrThreeWordImages = document.querySelectorAll('#twoOrThreeWordImage')
+        //     for (let index = 0; index < twoOrThreeWordImages.length; index++) {
+        //       if (twoOrThreeWordImages[index].style.display === "none") {
+        //         twoOrThreeWordImages[index].style.display = "block";
+        //       } else {
+        //         twoOrThreeWordImages[index].style.display = "none";
+        //       }
+        //     }
+
+        // }
+
+
+
+      
 
 
 
