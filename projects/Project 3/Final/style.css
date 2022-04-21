@@ -1,6 +1,11 @@
 @font-face {
   font-family: Orchard Linear;
-  src: url('projects/Project 3/Part 6/Orchard-Linear.otf');
+  src: url('/projects/Project\ 3/Orchard-Linear.otf');
+}
+
+@font-face {
+  font-family: GT Alpina;
+  src: url('/projects/Project\ 3/GT-Alpina-Regular-Trial.otf');
 }
 
 
@@ -28,6 +33,7 @@ body {
 }
 
 #filtering-container {
+  font-family: GT Alpina;
   display: inline-flex;
   flex-direction: row;
   width: 67vw;
@@ -120,17 +126,17 @@ display: block;
 
 /* colors */
 
-/* #redImage {
-display: none;
+#redImage {
+display: block;
 }
 
 #whiteImage {
-  display: none;
+  display: block;
 }
 
 #blueImage {
-  display: none;
-} */
+  display: block;
+}
 
 /* word count */
 
