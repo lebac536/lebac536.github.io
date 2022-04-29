@@ -22,7 +22,8 @@ jsonPromise.then ((data) => {
 
     for (let index = 0; index < records.length; index++) {
         const imageUrl = records[index].fields.Attachments[0].url
-                                                const imageID = records[index].id
+                                                
+        const imageID = records[index].id
 
         // //Create Container
 
@@ -32,7 +33,7 @@ jsonPromise.then ((data) => {
         const imageElement = document.createElement('img')
         imageElement.classList.add('image')
         imageElement.setAttribute('src',imageUrl)
-                                                imageElement.setAttribute('id',imageID)
+        imageElement.setAttribute('id',imageID)
         const allImages = document.querySelectorAll('img')
 
         //Add Container Element to DOM
