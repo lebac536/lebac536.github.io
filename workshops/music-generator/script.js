@@ -55,8 +55,7 @@ jsonPromise.then ((data) => {
         songDetailsElement.setAttribute('id','songDetails')
 
         const songImage = document.getElementById("songImage")
-        // songImage.appendChild(imageLinkElement)
-        // songImage.appendChild(songDetailsElement)
+
 
 
         // give ids

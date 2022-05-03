@@ -17,4 +17,3 @@ const weapons = [
         attack: 157
     }]
 
-    console.log(weapons)
