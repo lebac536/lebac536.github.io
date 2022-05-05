@@ -1,0 +1,34 @@
+body {
+    background-color: #A8A8A8;
+    overflow: hidden;
+
+}
+
+#container {
+    font-family: Inter;
+    /* display: block; */
+    background-color: #F9F9F9;
+    border-radius: 70px;
+    margin-top: 3vh;
+    margin-bottom: 3vh;
+    margin-left: 3vw;
+    margin-right: 3vw;
+    height: 94vh;
+    box-shadow: 1vw 2vh;
+    overflow: hidden;
+}
+
+.drawings {
+    /* display: flex; */
+
+    overflow: hidden;
+    
+}
+
+.color1 {
+    position: absolute;
+}
+
+.color2 {
+    position: absolute;
+}
