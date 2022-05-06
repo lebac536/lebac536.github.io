@@ -39,13 +39,15 @@ body {
 }
 
 
-.menu {
+#menu {
     background-color:#A8A8A8 ;
     display: flex;
     width: 9vw;
     height: 10vh;
     margin: 20vw;
     text-align: center;
+    justify-content: center;
+    align-items: center;
     border-radius: 50px;
 
     
@@ -53,4 +55,9 @@ body {
 
 .menu img {
     width: 6vw;
+}
+
+#menu_button:hover {
+    filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(93deg) brightness(103%) contrast(103%);
+
 }
