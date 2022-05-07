@@ -1762,13 +1762,17 @@ jsonPromise.then ((data) => {
 
 
 
-// const menubar = document.getElementById("menu")
+const menubar = document.getElementById("menu")
 
-// document.getElementById("menu_button").addEventListener("mouseover", showMenu())
+document.getElementById("menu_button").addEventListener("click", showMenu)
 
-// function showMenu() {
-//     document.getElementById("menu_button").style.filter = "filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(93deg) brightness(103%) contrast(103%)"
-// }
+function showMenu() {
+    
+    document.getElementById("menu").style.height = "50vh"
+    document.getElementById("menu_button").style.filter = "filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(93deg) brightness(103%) contrast(103%)"
+
+
+}
 
 
 
