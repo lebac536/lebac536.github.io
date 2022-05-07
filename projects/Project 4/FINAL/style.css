@@ -49,12 +49,12 @@ body {
     color: black;
     padding: 16px;
     font-size: 2vh;
-    width: 5vw;
     height: 7vh;
     border: none;
     margin-top: 3vw;
     margin-left: 3vw;
     border-radius: 2vw;
+    justify-content: center;
   }
 
   .dropbtn img {
