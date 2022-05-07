@@ -1762,21 +1762,34 @@ jsonPromise.then ((data) => {
 
 })
 
+const helpDiv =  document.createElement("div")
+helpDiv.classList.add("helpDiv")
+
+const helpInfo = document.createTextNode("use the letter keys to draw, use the number keys to change colours")
+helpDiv.appendChild(helpInfo)
 
 
 
 
-document.getElementById("helpButton").addEventListener("click", showHelpInfo)
+
+document.getElementById("helpButton").addEventListener("mouseover", showHelpInfo)
 function showHelpInfo() {
+    
     console.log("this works")
-    const helpDiv =  document.createElement("div")
-    helpDiv.classList.add("helpDiv")
 
-    const helpInfo = document.createTextNode("use the letter keys to draw, use the number keys to change colours")
-    helpDiv.appendChild(helpInfo)
     document.body.appendChild(helpDiv)
 
     document.body.insertBefore(helpDiv, container);
+}
+
+document.getElementById("helpButton").addEventListener("mouseout", hideHelpInfo)
+function hideHelpInfo() {
+  helpDiv.style.display = "none"
+}
+
+document.getElementById("reloadButton").addEventListener("click", reloadPage)
+function reloadPage () {
+    window.location.reload(true)
 }
 
 

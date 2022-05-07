@@ -97,7 +97,7 @@ body {
   /* Change the background color of the dropdown button when the dropdown content is shown */
   .dropdown:hover .dropbtn img {
       filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(93deg) brightness(103%) contrast(103%);
-    width: 4vw}
+        width: 4vw}
 
   .helpDiv {
       position: fixed;
@@ -109,5 +109,6 @@ body {
       padding: 5%;
       left: 25%;
       top: 25%;
+      display: block;
       border-radius: 2vw;
   }
