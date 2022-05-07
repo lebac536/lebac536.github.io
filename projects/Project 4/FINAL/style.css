@@ -72,7 +72,6 @@ body {
     display: none;
     position: absolute;
     background-color: rgb(226, 226, 226);
-    width: 5vw;
     z-index: 1;
     margin-left: 3vw;
     border-radius: 2vw;
