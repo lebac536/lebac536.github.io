@@ -6,6 +6,8 @@ const authenticatedUrl = airtableDatabaseUrl + "?api_key=" + airtableApiKey
 
 let currentColor = 0
 
+const container = document.querySelector('#container')
+
 
 //JSON STUFF :)
 
@@ -1762,16 +1764,19 @@ jsonPromise.then ((data) => {
 
 
 
-const menubar = document.getElementById("menu")
-
-document.getElementById("menu_button").addEventListener("click", showMenu)
-
-function showMenu() {
-    
-    document.getElementById("menu").style.height = "50vh"
-    document.getElementById("menu_button").style.filter = "filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(93deg) brightness(103%) contrast(103%)"
 
 
+document.getElementById("helpButton").addEventListener("click", showHelpInfo)
+function showHelpInfo() {
+    console.log("this works")
+    const helpDiv =  document.createElement("div")
+    helpDiv.classList.add("helpDiv")
+
+    const helpInfo = document.createTextNode("use the letter keys to draw, use the number keys to change colours")
+    helpDiv.appendChild(helpInfo)
+    document.body.appendChild(helpDiv)
+
+    document.body.insertBefore(helpDiv, container);
 }
 
 
