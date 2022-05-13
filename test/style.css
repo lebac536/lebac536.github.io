@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&family=Racing+Sans+One&display=swap');
+
+@media only screen and (max-width: 768px) {
+    body {
+      background-color: rgb(26, 99, 86);
+      color: rgb(170, 229, 136);
+      
+    };
+  }
+
+
+  @media only screen and (min-width: 769px) {
+    body {
+      background-color: rgb(220, 220, 208);
+      
+    };
+  }
+
+  body {
+      width: 100%;
+      overflow: none;
+  }
+
+
+.question {
+    font-family: Inter;
+    font-weight: bold;
+
+}
+
+.answer {
+    font-family: Inter;
+}
+
+iframe {
+   border-radius:20px;
+   width: 50%;
+   
+}
+
+h1 {
+    font-family: Racing Sans One;
+    color: rgb(77, 52, 33);
+}
+
+#position {
+    position: absolute;
+    left: 90%;
+    top: 0%;
+    background-color: beige;
+    height: 60px;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+#columns {
+    display:  flex;
+
+}
+
+#columns p {
+    background-color: beige;
+    padding: 20px;
+    margin: 10px;
+}
+
+.answer a {
+    text-decoration: none;
+    color: rgb(77, 52, 33);
+}
+
